@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
-const DB_NAME = process.env.DB_NAME || 'fintegroNyashMyash'
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost'
+const DB_NAME = process.env.DB_NAME
+const MONGO_URL = process.env.MONGO_URL
 
 mongoose.connect(`${MONGO_URL}/${DB_NAME}`, {useNewUrlParser: true})
 
